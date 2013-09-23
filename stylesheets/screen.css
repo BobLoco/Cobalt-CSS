@@ -1,0 +1,375 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 61, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1em;
+}
+
+/* line 19, ../sass/screen.scss */
+div.demo {
+  padding: 20px;
+  margin: 10px auto;
+  width: 960px;
+  border: 1px solid #cccccc;
+}
+
+/* line 26, ../sass/screen.scss */
+span.demotag {
+  display: block;
+  float: right;
+  background-color: #ffa;
+  font-size: 0.75em;
+  line-height: 1.33333em;
+  padding: 3px;
+  font-family: "Courier New", monospace;
+  clear: right;
+}
+
+/* line 38, ../sass/screen.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* line 42, ../sass/screen.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 46, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-weight: 300px;
+}
+
+/* line 51, ../sass/screen.scss */
+h1 {
+  font-size: 2.625em;
+  line-height: 1.14286em;
+}
+/* line 54, ../sass/screen.scss */
+h1.title {
+  color: #3888ed;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* line 61, ../sass/screen.scss */
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33333em;
+}
+
+/* line 65, ../sass/screen.scss */
+h3 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* line 69, ../sass/screen.scss */
+h4 {
+  font-size: 1.5em;
+  line-height: 1.33333em;
+}
+
+/* line 73, ../sass/screen.scss */
+h5 {
+  font-size: 1.125em;
+  line-height: 1.77778em;
+}
+
+/* line 77, ../sass/screen.scss */
+h6 {
+  font-size: 1em;
+  line-height: 2em;
+}
+
+/* line 81, ../sass/screen.scss */
+.subheading {
+  color: #777;
+}
+
+/* line 85, ../sass/screen.scss */
+hr {
+  border: 1px solid #cccccc;
+}
+
+/* line 89, ../sass/screen.scss */
+p {
+  color: #444;
+  margin: 0.66667em 0;
+}
+
+/* line 94, ../sass/screen.scss */
+ul, ol {
+  margin: 0.66667em 0 0.66667em 8px;
+  padding: 0 0 0 15px;
+}
+/* line 98, ../sass/screen.scss */
+ul ol, ul ul, ol ol, ol ul {
+  margin: 0;
+}
+/* line 102, ../sass/screen.scss */
+ul li, ol li {
+  margin: 0.33333em 0;
+}
+
+/* line 107, ../sass/screen.scss */
+ol {
+  list-style-type: decimal;
+}
+/* line 109, ../sass/screen.scss */
+ol ol {
+  list-style-type: lower-alpha;
+}
+/* line 111, ../sass/screen.scss */
+ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/* line 117, ../sass/screen.scss */
+ul {
+  list-style-type: disc;
+}
+/* line 119, ../sass/screen.scss */
+ul ul {
+  list-style-type: circle;
+}
+/* line 121, ../sass/screen.scss */
+ul ul ul {
+  list-style-type: square;
+}
+
+/* line 127, ../sass/screen.scss */
+a {
+  color: #3888ed;
+}
+
+/* line 131, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 135, ../sass/screen.scss */
+em {
+  font-style: italic;
+}
+
+/* line 139, ../sass/screen.scss */
+pre, code {
+  font-family: "Courier New", monospace;
+  white-space: pre;
+}
+
+/* line 144, ../sass/screen.scss */
+blockquote {
+  font-size: 1em;
+  line-height: 1.2em;
+  font-style: italic;
+  padding: 10px;
+  margin: 0.66667em 0;
+  background-color: #eee;
+}
+
+/* line 152, ../sass/screen.scss */
+form {
+  width: 100%;
+}
+/* line 155, ../sass/screen.scss */
+form label {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  display: block;
+  width: 150px;
+  text-align: right;
+  float: left;
+  padding-right: 5px;
+  clear: left;
+}
+/* line 165, ../sass/screen.scss */
+form select, form input {
+  margin: 0.7619em 0;
+  display: block;
+}
+/* line 170, ../sass/screen.scss */
+form input {
+  font-size: 0.875em;
+  line-height: 1.14286em;
+  border: 1px solid #cccccc;
+  padding: 3px;
+}
+/* line 176, ../sass/screen.scss */
+form input:disabled {
+  color: #aaa;
+  text-decoration: line-through;
+  background-color: #eee;
+}
+/* line 182, ../sass/screen.scss */
+form input[type="checkbox"] {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  display: inline-block;
+  background-image: url("../images/unchecked.png");
+  background-repeat: no-repeat;
+  border: none;
+  height: 12px;
+  width: 12px;
+  -webkit-appearance: none;
+  margin-top: 7px;
+  clear: both;
+}
+/* line 195, ../sass/screen.scss */
+form input[type="checkbox"]:checked {
+  background-image: url("../images/check.png");
+}
+/* line 199, ../sass/screen.scss */
+form input[type="radio"] {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  display: inline-block;
+  background-image: url("../images/circle.png");
+  background-repeat: no-repeat;
+  border: none;
+  height: 12px;
+  width: 12px;
+  -webkit-appearance: none;
+  margin-top: 6px;
+  width: 600px;
+  clear: both;
+}
+/* line 213, ../sass/screen.scss */
+form input[type="radio"]:checked {
+  background-image: url("../images/record.png");
+}
+/* line 217, ../sass/screen.scss */
+form select {
+  font-size: 0.875em;
+  line-height: 1.14286em;
+  border: 1px solid #cccccc;
+  padding: 3px;
+  min-width: 150px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-image: url("../images/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position: right 4px top 7px;
+}
+/* line 229, ../sass/screen.scss */
+form div.button-row {
+  margin-left: 150px;
+}
+/* line 233, ../sass/screen.scss */
+form button {
+  font-size: 0.875em;
+  line-height: 1.14286em;
+  padding: 10px 15px;
+  margin: 0;
+}
+/* line 239, ../sass/screen.scss */
+form input[type="submit"], form button {
+  font-size: 0.875em;
+  line-height: 1.14286em;
+  margin: 0;
+  display: inline;
+  padding: 10px 15px;
+  background-color: #eee;
+  color: #888;
+  border: none;
+}
+/* line 248, ../sass/screen.scss */
+form input[type="submit"]:hover, form button:hover {
+  background-color: #f3f3f3;
+  color: #444;
+}
+/* line 253, ../sass/screen.scss */
+form input[type="submit"]:active, form button:active {
+  background-color: #ccc;
+  color: #444;
+}
+/* line 259, ../sass/screen.scss */
+form .button-blue {
+  background-color: #3888ed !important;
+  color: white !important;
+}
+/* line 263, ../sass/screen.scss */
+form .button-blue:hover {
+  background-color: #67a4f1 !important;
+}
+/* line 267, ../sass/screen.scss */
+form .button-blue:active {
+  background-color: #146dde !important;
+}

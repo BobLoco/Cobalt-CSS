@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cobalt CSS</title>
+	<link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+<body>
+	<div class="demo">
+		<h1 class="title">Welcome to Cobalt CSS</h1>
+		<p>This is a basic introduction to how Cobalt's CSS works. The default page should have some nice-looking styling for the default elements (such as forms, buttons, links etc. but there should also be some classes available for the same.</p>
+		<p>This ought to be treated like a UI kit, that could be released prior to the main app</p>
+		<hr>
+		
+		<span class="demotag">h1.title</span>
+		<h1 class="title">Title</h1>
+		<span class="demotag">h1</span>
+		<h1>Header 1</h1>
+		<span class="demotag">h2</span>
+		<h2>Header 2</h2>
+		<span class="demotag">h3</span>
+		<h3>Header 3</h3>
+		<span class="demotag">h4</span>
+		<h4>Header 4</h4>
+		<span class="demotag">h5</span>
+		<h5>Header 5</h5>
+		<span class="demotag">h6</span>
+		<h6>Header 6</h6>
+
+		<span class="demotag">h1.subheading</span>
+		<h1 class="subheading">Subheader 1</h1>
+		<span class="demotag">h2.subheading</span>
+		<h2 class="subheading">Subheader 2</h2>
+		<span class="demotag">h3.subheading</span>
+		<h3 class="subheading">Subheader 3</h3>
+		<span class="demotag">h4.subheading</span>
+		<h4 class="subheading">Subheader 4</h4>
+		<span class="demotag">h5.subheading</span>
+		<h5 class="subheading">Subheader 5</h5>
+		<span class="demotag">h6.subheading</span>
+		<h6 class="subheading">Subheader 6</h6>
+	
+		<span class="demotag">p</span>
+		<p>Lorem ipsum dolor sit amet, <a href="http://www.google.com">consectetur</a> adipisicing elit. Dolore, hic <em>temporibus</em> id iste quasi illum quia provident facilis eius nihil natus labore molestiae iure ducimus consectetur libero velit. <strong>Velit, <em>quis!</em></strong></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <u>Nemo, id</u>, maiores quaerat ut asperiores quod cum dignissimos magni ullam repellendus. Ducimus iusto explicabo repellat deleniti quo autem quia saepe blanditiis!</p>
+
+		<span class="demotag">ul</span>
+		<ul>
+			<li>Apple</li>
+			<li>Orange</li>
+			<li>Banana</li>
+			
+				<ul>
+					<li>Strawberry</li>
+					<li>Raspberry</li>
+				</ul>
+			
+			<li>Pear</li>
+		</ul>
+		
+		<span class="demotag">ul</span>
+		<ol>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			
+				<ol>
+					<li>Four</li>
+					<li>Four point five</li>
+				</ol>
+			
+			<li>Five</li>
+		</ol>
+
+		<span class="demotag">pre</span>
+		<pre>
+Some preformatted text
+		</pre>
+		
+		<span class="demotag">code</span>
+		<code>
+&lt;?php
+if ($hello == TRUE) {
+	echo "Hello world";
+}
+		</code>
+
+		<span class="demotag">blockquote</span>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta, fugiat, blanditiis nihil accusantium aliquid quasi id quidem laborum necessitatibus harum ducimus expedita pariatur excepturi tempore voluptatibus voluptates corporis quibusdam.
+		</blockquote>
+		
+		<span class="demotag">form</span>
+		<p><em>Below is the standard form layout.</em></p>
+		<form>
+			<span class="demotag">input[type="text"]</span>
+			<label for="text">Label 1</label>
+			<input type="text" name="text" placeholder="Text input">
+			<label for="textdisabled">Disabled</label>
+			<input type="text" name="textdisabled" value="Something disabled" disabled="disabled">
+
+			<span class="demotag">select</span>
+			<label for="select">Label 2</label>
+			<select name="select" id="select">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+			</select>
+
+			<span class="demotag">input[type="checkbox"]</span>
+			<label for="checkbox">Checkbox</label>
+			<input type="checkbox" id="checkbox" name="checkbox"><br>
+			<label for="disabledcheckbox">Disabled Checkbox</label>
+			<input type="checkbox" id="disabledcheckbox" name="disabledcheckbox" disabled="disabled">
+			<div class="clear"></div>
+			<span class="demotag">input[type="radio"]</span>
+			<label for="radio1">Radio 1</label>
+			<input type="radio" id="radio1" name="radio" value="radio1" checked="checked">
+			<label for="radio2">Radio 2</label>
+			<input type="radio" id="radio2" name="radio">
+
+			<span class="demotag">div.button-row</span>
+			<div class="button-row">
+				<span class="demotag">input.button-blue</span>
+				<input type="submit" class="button-blue" value="Submit">
+				<span class="demotag">button</span>
+				<button>Cancel</button>
+			</div>
+		</form>
+
+	</div>
+	
+</body>
+</html>
