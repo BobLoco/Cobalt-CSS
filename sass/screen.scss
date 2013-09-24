@@ -139,6 +139,12 @@ em {
 pre, code {
 	font-family: "Courier New", monospace;
 	white-space: pre;
+	display: block;
+}
+
+code {
+	border: 1px solid #ddd;
+	padding: 0 10px;
 }
 
 blockquote {

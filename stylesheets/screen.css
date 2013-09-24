@@ -233,9 +233,16 @@ em {
 pre, code {
   font-family: "Courier New", monospace;
   white-space: pre;
+  display: block;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
+code {
+  border: 1px solid #dddddd;
+  padding: 0 10px;
+}
+
+/* line 150, ../sass/screen.scss */
 blockquote {
   font-size: 1em;
   line-height: 1.2em;
@@ -245,11 +252,11 @@ blockquote {
   background-color: #eee;
 }
 
-/* line 152, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 form {
   width: 100%;
 }
-/* line 155, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 form label {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -260,25 +267,25 @@ form label {
   padding-right: 5px;
   clear: left;
 }
-/* line 165, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 form select, form input {
   margin: 0.7619em 0;
   display: block;
 }
-/* line 170, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 form input {
   font-size: 0.875em;
   line-height: 1.14286em;
   border: 1px solid #cccccc;
   padding: 3px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 form input:disabled {
   color: #aaa;
   text-decoration: line-through;
   background-color: #eee;
 }
-/* line 182, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 form input[type="checkbox"] {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -292,11 +299,11 @@ form input[type="checkbox"] {
   margin-top: 7px;
   clear: both;
 }
-/* line 195, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 form input[type="checkbox"]:checked {
   background-image: url("../images/check.png");
 }
-/* line 199, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 form input[type="radio"] {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -311,11 +318,11 @@ form input[type="radio"] {
   width: 600px;
   clear: both;
 }
-/* line 213, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 form input[type="radio"]:checked {
   background-image: url("../images/record.png");
 }
-/* line 217, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 form select {
   font-size: 0.875em;
   line-height: 1.14286em;
@@ -328,18 +335,18 @@ form select {
   background-repeat: no-repeat;
   background-position: right 4px top 7px;
 }
-/* line 229, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 form div.button-row {
   margin-left: 150px;
 }
-/* line 233, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 form button {
   font-size: 0.875em;
   line-height: 1.14286em;
   padding: 10px 15px;
   margin: 0;
 }
-/* line 239, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 form input[type="submit"], form button {
   font-size: 0.875em;
   line-height: 1.14286em;
@@ -350,26 +357,26 @@ form input[type="submit"], form button {
   color: #888;
   border: none;
 }
-/* line 248, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 form input[type="submit"]:hover, form button:hover {
   background-color: #f3f3f3;
   color: #444;
 }
-/* line 253, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 form input[type="submit"]:active, form button:active {
   background-color: #ccc;
   color: #444;
 }
-/* line 259, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 form .button-blue {
   background-color: #3888ed !important;
   color: white !important;
 }
-/* line 263, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 form .button-blue:hover {
   background-color: #67a4f1 !important;
 }
-/* line 267, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 form .button-blue:active {
   background-color: #146dde !important;
 }
