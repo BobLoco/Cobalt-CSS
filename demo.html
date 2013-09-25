@@ -90,33 +90,46 @@ if ($hello == TRUE) {
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, soluta, fugiat, blanditiis nihil accusantium aliquid quasi id quidem laborum necessitatibus harum ducimus expedita pariatur excepturi tempore voluptatibus voluptates corporis quibusdam.
 		</blockquote>
 		
-		<span class="demotag">form</span>
-		<p><em>Below is the standard form layout.</em></p>
-		<form>
-			<span class="demotag">input[type="text"]</span>
-			<label for="text">Label 1</label>
-			<input type="text" name="text" placeholder="Text input">
-			<label for="textdisabled">Disabled</label>
-			<input type="text" name="textdisabled" value="Something disabled" disabled="disabled">
+		<span class="demotag">form.inline</span>
+		<p><em>Below is the standard inline form layout.</em></p>
+		<form class="inline">
+			<div class="form-element">
+				<span class="demotag">input[type="text"]</span>
+				<label for="text">Label 1</label>
+				<input type="text" name="text" placeholder="Text input">
+			</div>
+			<div class="form-element">
+				<label for="textdisabled">Disabled</label>
+				<input type="text" name="textdisabled" value="Something disabled" disabled="disabled">
+			</div>
 
-			<span class="demotag">select</span>
-			<label for="select">Label 2</label>
-			<select name="select" id="select">
-				<option value="1">Option 1</option>
-				<option value="2">Option 2</option>
-			</select>
+			<div class="form-element">
+				<span class="demotag">select</span>
+				<label for="select">Label 2</label>
+				<select name="select" id="select">
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+				</select>
+			</div>
 
+			<div class="form-element">
 			<span class="demotag">input[type="checkbox"]</span>
-			<label for="checkbox">Checkbox</label>
-			<input type="checkbox" id="checkbox" name="checkbox"><br>
-			<label for="disabledcheckbox">Disabled Checkbox</label>
-			<input type="checkbox" id="disabledcheckbox" name="disabledcheckbox" disabled="disabled">
-			<div class="clear"></div>
-			<span class="demotag">input[type="radio"]</span>
-			<label for="radio1">Radio 1</label>
-			<input type="radio" id="radio1" name="radio" value="radio1" checked="checked">
-			<label for="radio2">Radio 2</label>
-			<input type="radio" id="radio2" name="radio">
+				<input type="checkbox" id="checkbox" name="checkbox">
+				<label for="checkbox">Checkbox</label>
+			</div>
+			<div class="form-element">
+				<input type="checkbox" id="disabledcheckbox" name="disabledcheckbox" disabled="disabled">
+				<label for="disabledcheckbox">Disabled Checkbox</label>
+			</div>
+			<div class="form-element">
+				<span class="demotag">input[type="radio"]</span>
+				<input type="radio" id="radio1" name="radio" value="radio1" checked="checked">
+				<label for="radio1">Radio 1</label>
+			</div>
+			<div class="form-element">
+				<input type="radio" id="radio2" name="radio">
+				<label for="radio2">Radio 2</label>
+			</div>
 
 			<span class="demotag">div.button-row</span>
 			<div class="button-row">
@@ -126,6 +139,33 @@ if ($hello == TRUE) {
 				<button>Cancel</button>
 			</div>
 		</form>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Rob</td>
+					<td>England</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Matthew</td>
+					<td>England</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Kate</td>
+					<td>Scotland</td>
+				</tr>
+			</tbody>
+		</table>
 
 	</div>
 	

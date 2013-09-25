@@ -8,7 +8,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:300);
 
 $base-font-size: 16px;
-$base-line-height: 16px;
+$base-line-height: 24px;
 
 $main: #3888ED;
 
@@ -160,17 +160,10 @@ form {
 
 	label {
 		@include adjust-font-size-to(14px, 1.5);
-		display: block;
-		width: 150px;
-		text-align: right;
-		float: left;
-		padding-right: 5px;
-		clear: left;
 	}
 
 	select, input {
-		margin: rhythm(2/3, 14px) 0;
-		display: block;
+		margin: rhythm(1/8, 14px) 0;
 	}
 
 	input {
@@ -185,41 +178,6 @@ form {
 		background-color: #eee;
 	}
 
-	input[type="checkbox"] {
-		@include adjust-font-size-to(14px, 1.5);
-		display: inline-block;
-		background-image: url('../images/unchecked.png');
-		background-repeat: no-repeat;
-		border: none;
-		height: 12px;
-		width: 12px;
-		-webkit-appearance: none;
-		margin-top: 7px;
-		clear: both;
-	}
-
-	input[type="checkbox"]:checked {
-		background-image: url('../images/check.png');
-	}
-
-	input[type="radio"] {
-		@include adjust-font-size-to(14px, 1.5);
-		display: inline-block;
-		background-image: url('../images/circle.png');
-		background-repeat: no-repeat;
-		border: none;
-		height: 12px;
-		width: 12px;
-		-webkit-appearance: none;
-		margin-top: 6px;
-		width: 600px;
-		clear: both;
-	}
-
-	input[type="radio"]:checked {
-		background-image: url('../images/record.png');
-	}
-
 	select {
 		@include adjust-font-size-to(14px, 1);
 		border: 1px solid #ccc;
@@ -229,11 +187,16 @@ form {
 		border-radius: 0;
 		background-image: url('../images/chevron-down.png');
 		background-repeat: no-repeat;
-		background-position: right 4px top 7px;
+		background-position: right 8px top 11px;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		vertical-align: 2px;
+		margin-right: 3px;
 	}
 
 	div.button-row {
-		margin-left: 150px;
+		margin: 15px 0 0 0;
 	}
 
 	button {
@@ -244,6 +207,7 @@ form {
 
 	input[type="submit"], button {
 		@include adjust-font-size-to(14px, 1);
+		-webkit-appearance: none;
 		margin: 0;
 		display: inline;
 		padding: 10px 15px;
@@ -252,12 +216,12 @@ form {
 		border: none;
 
 		&:hover {
-			background-color: #f3f3f3;
+			background-color: #ccc;
 			color: #444;
 		}
 
 		&:active {
-			background-color: #ccc;
+			background-color: #f3f3f3;
 			color: #444;
 		}
 	}
@@ -267,12 +231,48 @@ form {
 		color: #fff !important;
 
 		&:hover {
-			background-color: lighten($main, 10%) !important;
+			background-color: darken($main, 10%) !important;
 		}
 
 		&:active {
-			background-color: darken($main, 10%) !important;
+			background-color: lighten($main, 5%) !important;
 		}
 	}
 
+}
+
+form.inline {
+
+	label {
+		width: 150px;
+		text-align: right;
+		padding-right: 5px;
+		clear: left;
+		float: left;
+	}
+
+	div.button-row {
+		margin-left: 150px;
+	}
+
+	input[type="checkbox"], input[type="radio"] {
+		margin: rhythm(4/7, 16px) 0;
+	}
+		
+}
+
+table {
+	width: 100%;
+	
+	th {
+		font-weight: bold;
+	}
+
+	tbody tr {
+		border-top: 1px solid #ccc;
+	}
+
+	td {
+		padding: 5px;
+	}
 }
