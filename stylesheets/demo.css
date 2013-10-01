@@ -24,7 +24,7 @@ span.demotag {
   background-color: #ffa;
   font-size: 0.75em;
   line-height: 2em;
-  padding: 3px;
+  padding: 0 3px;
   font-family: "Courier New", monospace;
   clear: right;
 }

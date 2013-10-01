@@ -29,7 +29,7 @@ span.demotag {
 	float: right;
 	background-color: #ffa;
 	@include adjust-font-size-to(12px);
-	padding: 3px;
+	padding: 0 3px;
 	font-family: "Courier New", monospace;
 	clear: right;
 }
