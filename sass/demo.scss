@@ -1,0 +1,37 @@
+@import "compass/typography/vertical_rhythm";
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+
+// START DEMO
+
+div.demo {
+	padding: 20px;
+	margin: 10px auto;
+	width: 960px;
+	border: 1px solid #ccc;
+
+	.row {
+		margin-bottom: 10px;
+
+		div {
+			background-color: #ddd;
+			height: 30px;
+			text-align: center;
+			padding-top: 2px;
+		}
+	}
+}
+
+span.demotag {
+	display: block;
+	float: right;
+	background-color: #ffa;
+	@include adjust-font-size-to(12px);
+	padding: 3px;
+	font-family: "Courier New", monospace;
+	clear: right;
+}
+
+// END DEMO

@@ -12,28 +12,16 @@ $base-line-height: 24px;
 
 $main: #3888ED;
 
+$column-width: 6/96;
+$column-gutter: 1/96;
+
+@mixin grid-unit($columns) {
+	width: percentage(($column-width * $columns) + ($column-gutter * 2 * ($columns - 1)));
+	margin-left: percentage($column-gutter);
+	margin-right: percentage($column-gutter);
+}
+
 @include establish-baseline;
-
-// START DEMO
-
-div.demo {
-	padding: 20px;
-	margin: 10px auto;
-	width: 960px;
-	border: 1px solid #ccc;
-}
-
-span.demotag {
-	display: block;
-	float: right;
-	background-color: #ffa;
-	@include adjust-font-size-to(12px);
-	padding: 3px;
-	font-family: "Courier New", monospace;
-	clear: right;
-}
-
-// END DEMO
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
@@ -275,4 +263,16 @@ table {
 	td {
 		padding: 5px;
 	}
+}
+
+.row {
+	white-space-collapse: discard;
+
+	.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
+		display: inline-block;
+	}
+}
+
+@for $i from 1 through 12 {
+	.c#{$i} { @include grid-unit($i); }
 }
