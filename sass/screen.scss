@@ -33,7 +33,7 @@ div.clear {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Raleway, Helvetica, Arial, sans-serif;
-	font-weight: 300px;
+	font-weight: 300;
 }
 
 h1 {
@@ -143,6 +143,66 @@ blockquote {
 	background-color: #eee;
 }
 
+.nav {
+	ul {
+		background-color: #000;
+		display: block;
+		padding: 0;
+		margin: 0;
+
+		li {
+			display: inline-block;
+			position: relative;
+			padding: 0;
+			margin: 0;
+
+			a {
+				display: block;
+				padding: 10px;
+				color: #fff;
+				text-decoration: none;
+
+				&:hover {
+					background-color: $main;
+				}
+			}
+
+			&.dropdown {
+
+				a {
+					background-image: url('../images/chevron-down-white.png');
+					background-repeat: no-repeat;
+					background-position: right 8px top 18px;
+					background-position-x: 93%;
+					background-position-y: 50%;
+					padding-right: 25px;
+				}
+
+				ul {
+					position: absolute;
+					z-index: 10;
+					top: 44px;
+					float: left;
+					display: none;
+
+					li {
+						width: 100%;
+
+						a {
+							background-image: none;
+							padding-right: 10px;
+						}
+					}
+				}
+
+				&.hover ul {
+					display: block;
+				}
+			} 
+		}
+	}
+}
+
 form {
 	width: 100%;
 
@@ -176,6 +236,8 @@ form {
 		background-image: url('../images/chevron-down.png');
 		background-repeat: no-repeat;
 		background-position: right 8px top 11px;
+		background-position-x: 93%;
+		background-position-y: 50%;
 	}
 
 	input[type="checkbox"], input[type="radio"] {
@@ -185,12 +247,6 @@ form {
 
 	div.button-row {
 		margin: 15px 0 0 0;
-	}
-
-	button {
-		@include adjust-font-size-to(14px, 1);
-		padding: 10px 15px;
-		margin: 0;
 	}
 
 	input[type="submit"], button {

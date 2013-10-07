@@ -5,8 +5,25 @@
 	<title>Cobalt CSS</title>
 	<link rel="stylesheet" href="stylesheets/screen.css">
 	<link rel="stylesheet" href="stylesheets/demo.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/dropdown.js"></script>
 </head>
 <body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Link 1</a></li>
+			<li class="dropdown">
+				<a href="#">Dropdown</a>
+				<ul>
+					<li><a href="#">Sub 1</a></li>
+					<li><a href="#">Sub 2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Link 2</a></li>
+		</ul>
+	</div>
+
 	<div class="demo">
 		<h1 class="title">Welcome to Cobalt CSS</h1>
 		<p>Cobalt CSS is a mini CSS toolkit with a few basic styles to get you started. It's designed to be part of a much bigger yet-to-be-announced project, but it seems sensible to release it as soon as possible.</p>
@@ -186,6 +203,15 @@ if ($hello == TRUE) {
 			<div class="row">
 				<div class="c1">1</div><div class="c9">9</div><div class="c2">2</div>
 			</div>
+		</div>
+
+		<p>Navigation (see top of page for full demo)</p>
+		<div class="nav">
+			<span class="demotag">div.nav ul</span>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Somewhere</a></li>
+			</ul>
 		</div>
 
 	</div>
