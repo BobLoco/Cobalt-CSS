@@ -209,6 +209,7 @@ form {
 		@include adjust-font-size-to(14px, 1);
 		border: 1px solid #ccc;
 		padding: 3px;
+		margin: 3px 0;
 		height: rhythm(1.2);
 
 	}
@@ -223,6 +224,7 @@ form {
 		@include adjust-font-size-to(14px, 1);
 		border: 1px solid #ccc;
 		padding: 3px;
+		margin: 3px 0;
 		min-width: 150px;
 		-webkit-appearance: none;
 		border-radius: 0;
@@ -231,6 +233,7 @@ form {
 		background-position: right 8px top 11px;
 		background-position-x: 93%;
 		background-position-y: 50%;
+		height: rhythm(1.7);
 	}
 
 	input[type="checkbox"], input[type="radio"] {
